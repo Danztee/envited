@@ -37,8 +37,6 @@ function BookEvent(props) {
     navigate("/");
   };
 
-  const openEventPageHandler = () => {};
-
   return (
     <Modal>
       <div className={classes.bookEvent}>

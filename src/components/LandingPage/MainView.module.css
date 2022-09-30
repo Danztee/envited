@@ -1,0 +1,46 @@
+.wrapper {
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper {
+    text-align: end;
+  }
+}
+
+.wrapper h1 {
+  color: #240d57;
+  font-weight: 700;
+  font-weight: bolder;
+  font-family: Helvetica, sans-serif;
+  font-size: 4rem;
+  flex-wrap: wrap;
+}
+
+.wrapper span {
+  background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.wrapper p {
+  color: #4f4f4f;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 992px) {
+  #imageButton {
+    display: none;
+  }
+}
+
+#contentButton {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #contentButton {
+    display: block;
+  }
+}

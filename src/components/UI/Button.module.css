@@ -1,0 +1,15 @@
+.button {
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 0.5rem 2rem;
+
+  color: #ffffff;
+}
+
+/* @media screen and (min-width: 992px) {
+  .wrapper button {
+    margin-top: 2rem;
+  }
+} */

@@ -25,6 +25,11 @@ function BookEvent(props) {
     };
 
     props.onSend(data);
+    console.log(data);
+
+    if (data) {
+      navigate("/eventPage");
+    }
   };
 
   const navigate = useNavigate();
@@ -32,9 +37,7 @@ function BookEvent(props) {
     navigate("/");
   };
 
-  const openEventPageHandler = () => {
-    navigate("/eventPage");
-  };
+  const openEventPageHandler = () => {};
 
   return (
     <Modal>
@@ -52,11 +55,7 @@ function BookEvent(props) {
           </svg>
         </div>
         <h2>Book Event</h2>
-        <form
-          action=""
-          className={classes.form}
-          onSubmit={openEventPageHandler}
-        >
+        <form action="" className={classes.form} onSubmit={submitHandler}>
           <div className="row" style={{ rowGap: "2rem" }}>
             <div className="col-sm-12 col-md-6">
               <label htmlFor="eventName">Event Name</label>
@@ -84,11 +83,7 @@ function BookEvent(props) {
               <input type="image" src="" alt="eventPhoto" id="photo" />
             </div>
           </div>
-          <Button
-            title="Next"
-            id={classes.formButton}
-            // onClick={submitHandler}
-          />
+          <Button title="Next" id={classes.formButton} />
         </form>
       </div>
     </Modal>
